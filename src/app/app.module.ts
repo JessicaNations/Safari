@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PlanYourVisitFormComponent } from './plan-your-visit-form/plan-your-visit-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
