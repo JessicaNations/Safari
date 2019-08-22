@@ -5,7 +5,7 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { map, switchMap } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-secured-image',
+  selector: 'app-dashboard-secured-image',
   template: `
     <img [src]="dataUrl$|async"/>
   `
