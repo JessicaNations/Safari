@@ -1,25 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
-import { PlanYourVisitFormComponent } from './plan-your-visit-form/plan-your-visit-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PlanYourVisitModule } from './plan-your-visit-form/plan-your-visit.module';
+
+import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PageNotFoundComponent } from './dashboard/page-not-found.component';
+import { HttpClientInMemoryWebApiModule  } from 'angular-in-memory-web-api';
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PlanYourVisitFormComponent,
-    DashboardComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     CarouselModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientInMemoryWebApiModule,
+    RouterModule.forRoot([
+      { path: 'dashboard', component: DashboardComponent },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+      { path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
+    ]),
+    PlanYourVisitModule
+  ],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    PageNotFoundComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

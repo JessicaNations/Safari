@@ -1,14 +1,24 @@
-<carousel [interval]="myInterval" [(activeSlide)]="activeSlideIndex" >
-  <slide *ngFor="let slide of slides; let index=index">
-    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+  {{pageTitle}}
+  </div>
+  <div class="panel-body">
+    <carousel>
+      <slide>
+        <img src='assets/images/calf/3.jpg' alt="first slide" style="display: block; width: 100%;">
+        <img src='assets/images/peacock/2.jpg'alt="second slide" style="display: block; width: 100%;">
+        <img src='assets/images/zebra/1.jpg'alt="third slide" style="display: block; width: 100%;">
+      </slide>
+    </carousel>
+    <br/>
+    <div class="row">
+        <div class="text-center">Developed by:</div>
+        <h3 class="text-center">Jessica Nations</h3>
 
-    <div class="carousel-caption">
-      <h4>Slide {{index}}</h4>
-      <p>{{slide.text}}</p>
+        <div class="text-center">2019</div>
+        <div class="text-center">
+            <a href="https://github.com/JessicaNations/Safari">github.com/JessicaNations/Safari</a>
+        </div>
     </div>
-  </slide>
-</carousel>
-<br/>
-<!-- <div>
-  <input type="number" class="form-control" [(ngModel)]="myInterval">
-</div> -->
+  </div>
+</div>
