@@ -5,12 +5,13 @@ import { map } from 'rxjs/operators';
 
 
 @Component({
+  selector: 'app-dashboard',
   template: `
   <h1>Loading secure images</h1>
       <input type="text" [attr.value]="jwtToken" (change)="setJwtToken($event.target.value)"/>
       <ul>
       <li *ngFor="let image of images$|async">
-        <secured-image [src]="image.images.original.url"></secured-image>
+        <app-secured-image [src]="image.images.original.url"></app-secured-image>
       </li>
       </ul>`,
 })

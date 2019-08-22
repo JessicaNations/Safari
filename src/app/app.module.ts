@@ -13,8 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './dashboard/page-not-found.component';
 import { HttpClientInMemoryWebApiModule  } from 'angular-in-memory-web-api';
 
-import {SecuredImageComponent} from './dashboard/secured-image.component';
-import {MyHttpInterceptor} from './dashboard/my-http.interceptor';
+import { SecuredImageComponent } from './dashboard/secured-image.component';
+import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
