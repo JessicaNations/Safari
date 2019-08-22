@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-dashboard',
   template: `
-  <h1>Loading secure images</h1>
+  <h1>Site under construction</h1>
       <input type="text" [attr.value]="jwtToken" (change)="setJwtToken($event.target.value)"/>
       <ul>
       <li *ngFor="let image of images$|async">
