@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdmissionModule } from './admissions/admission.module';
+import { AboutModule } from './about/about.module';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SecuredImageComponent } from './dashboard/secured-image.component';
 import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
 @NgModule({
@@ -30,12 +32,14 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
       { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
       { path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
     ]),
-    AdmissionModule
+    AdmissionModule,
+    AboutModule,
+    BsDropdownModule.forRoot()
   ],
   declarations: [
     AppComponent,
     DashboardComponent,
-    SecuredImageComponent
+    SecuredImageComponent,
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true
