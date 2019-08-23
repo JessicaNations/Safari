@@ -3,14 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-dashboard',
-  template: `
-  <h1>Site under construction</h1>
-      <input type="text" [attr.value]="jwtToken" (change)="setJwtToken($event.target.value)"/>
-      <ul>
-      <li *ngFor="let image of images$|async">
-        <app-secured-image [src]="image.images.original.url"></app-secured-image>
-      </li>
-      </ul>`,
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
   public pageTitle = 'Safari';
