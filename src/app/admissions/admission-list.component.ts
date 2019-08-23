@@ -14,6 +14,7 @@ export class AdmissionListComponent implements OnInit {
   showImage = false;
   errorMessage = '';
 
+  // tslint:disable-next-line: variable-name
   _listFilter = '';
   get listFilter(): string {
     return this._listFilter;
@@ -50,7 +51,7 @@ export class AdmissionListComponent implements OnInit {
         this.admissions = admissions;
         this.filteredAdmissions = this.admissions;
       },
-      error => this.errorMessage = <any>error
+      error => this.errorMessage = error
     );
   }
 }

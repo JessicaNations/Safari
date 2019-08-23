@@ -17,7 +17,7 @@ export class AdmissionDetailGuard implements CanActivate {
     // console.log(id2);
     if (isNaN(id) || id < 1) {
       alert('Invalid admission Id');
-      this.router.navigate(['/admission']);
+      this.router.navigate(['/admissions']);
       return false;
     }
     return true;

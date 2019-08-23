@@ -5,7 +5,6 @@ export interface IAdmission {
   releaseDate: string;
   price: number;
   description: string;
-  starRating: number;
   imageUrl: string;
 }
 

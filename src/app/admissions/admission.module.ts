@@ -10,9 +10,9 @@ import { SharedModule } from '../shared/shared.module';
 @NgModule({
   imports: [
     RouterModule.forChild([
-      { path: 'admission', component: AdmissionListComponent },
+      { path: 'admissions', component: AdmissionListComponent },
       {
-        path: 'admission/:id',
+        path: 'admissions/:id',
         canActivate: [AdmissionDetailGuard],
         component: AdmissionDetailComponent
       },

@@ -18,7 +18,7 @@
     </div>
     <div class='table-responsive'>
       <table class='table'
-             *ngIf='admission && admission.length'>
+             *ngIf='admissions && admissions.length'>
         <thead>
           <tr>
             <th>
@@ -31,7 +31,6 @@
             <th>Code</th>
             <th>Available</th>
             <th>Price</th>
-            <th>5 Star Rating</th>
           </tr>
         </thead>
         <tbody>
@@ -44,18 +43,13 @@
                    [style.margin.px]='imageMargin'>
             </td>
             <td>
-              <a [routerLink]="['/admission', admission.admissionId]">
+              <a [routerLink]="['/admissions', admission.admissionId]">
                 {{ admission.admissionName }}
               </a>
             </td>
             <td>{{ admission.admissionCode | lowercase | convertToSpaces: '-' }}</td>
             <td>{{ admission.releaseDate }}</td>
             <td>{{ admission.price | currency:'USD':'symbol':'1.2-2' }}</td>
-            <td>
-              <app-star [rating]='admission.starRating'
-                       (ratingClicked)='onRatingClicked($event)'>
-              </app-star>
-            </td>
           </tr>
         </tbody>
       </table>

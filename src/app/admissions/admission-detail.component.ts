@@ -33,7 +33,7 @@ export class AdmissionDetailComponent implements OnInit {
   }
 
   onBack(): void {
-    this.router.navigate(['/admission']);
+    this.router.navigate(['/admissions']);
   }
 
 }

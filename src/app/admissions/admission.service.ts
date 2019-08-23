@@ -9,7 +9,7 @@ import { IAdmission } from './admission';
   providedIn: 'root'
 })
 export class AdmissionService {
-  private admissionUrl = 'api/admission/admission.json';
+  private admissionUrl = 'api/admissions/admissions.json';
 
   constructor(private http: HttpClient) { }
 
@@ -22,7 +22,7 @@ export class AdmissionService {
 
   getAdmission(id: number): Observable<IAdmission | undefined> {
     return this.getAdmissions().pipe(
-      map((admission: IAdmission[]) => admission.find(p => p.admissionId === id))
+      map((admissions: IAdmission[]) => admissions.find(p => p.admissionId === id))
     );
   }
 
