@@ -18,7 +18,7 @@
     </div>
     <div class='table-responsive'>
       <table class='table'
-             *ngIf='products && products.length'>
+             *ngIf='admission && admission.length'>
         <thead>
           <tr>
             <th>
@@ -27,7 +27,7 @@
                 {{showImage ? 'Hide' : 'Show'}} Image
               </button>
             </th>
-            <th>Product</th>
+            <th>Admission</th>
             <th>Code</th>
             <th>Available</th>
             <th>Price</th>
@@ -35,24 +35,24 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor='let product of filteredProducts'>
+          <tr *ngFor='let admission of filteredAdmissions'>
             <td>
               <img *ngIf='showImage'
-                   [src]='product.imageUrl'
-                   [title]='product.productName'
+                   [src]='admission.imageUrl'
+                   [title]='admission.admissionName'
                    [style.width.px]='imageWidth'
                    [style.margin.px]='imageMargin'>
             </td>
             <td>
-              <a [routerLink]="['/plan-your-visit-form', product.productId]">
-                {{ product.productName }}
+              <a [routerLink]="['/admission', admission.admissionId]">
+                {{ admission.admissionName }}
               </a>
             </td>
-            <td>{{ product.productCode | lowercase | convertToSpaces: '-' }}</td>
-            <td>{{ product.releaseDate }}</td>
-            <td>{{ product.price | currency:'USD':'symbol':'1.2-2' }}</td>
+            <td>{{ admission.admissionCode | lowercase | convertToSpaces: '-' }}</td>
+            <td>{{ admission.releaseDate }}</td>
+            <td>{{ admission.price | currency:'USD':'symbol':'1.2-2' }}</td>
             <td>
-              <app-star [rating]='product.starRating'
+              <app-star [rating]='admission.starRating'
                        (ratingClicked)='onRatingClicked($event)'>
               </app-star>
             </td>

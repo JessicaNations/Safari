@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { PlanYourVisitModule } from './plan-your-visit-form/plan-your-visit.module';
+import { AdmissionModule } from './admission/admission.module';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -31,7 +31,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
       { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
       { path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
     ]),
-    PlanYourVisitModule
+    AdmissionModule
   ],
   declarations: [
     AppComponent,
