@@ -10,8 +10,7 @@ import { AdmissionModule } from './admissions/admission.module';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PageNotFoundComponent } from './dashboard/page-not-found.component';
-import { HttpClientInMemoryWebApiModule  } from 'angular-in-memory-web-api';
+// import { HttpClientInMemoryWebApiModule  } from 'angular-in-memory-web-api';
 
 import { SecuredImageComponent } from './dashboard/secured-image.component';
 import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
@@ -25,7 +24,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
     FormsModule,
     CarouselModule.forRoot(),
     BrowserAnimationsModule,
-    HttpClientInMemoryWebApiModule,
+    // HttpClientInMemoryWebApiModule,
     RouterModule.forRoot([
       { path: 'dashboard', component: DashboardComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
@@ -36,7 +35,6 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
   declarations: [
     AppComponent,
     DashboardComponent,
-    PageNotFoundComponent,
     SecuredImageComponent
   ],
   providers: [{

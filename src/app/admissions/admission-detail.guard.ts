@@ -13,8 +13,6 @@ export class AdmissionDetailGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
     const id = +next.url[1].path;
-    // const id2 = next.paramMap.get('id');
-    // console.log(id2);
     if (isNaN(id) || id < 1) {
       alert('Invalid admission Id');
       this.router.navigate(['/admissions']);

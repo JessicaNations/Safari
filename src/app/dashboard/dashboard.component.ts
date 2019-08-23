@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-// import {SecuredImageComponent} from './secured-image.component';
-
-
 @Component({
   selector: 'app-dashboard',
   template: `
