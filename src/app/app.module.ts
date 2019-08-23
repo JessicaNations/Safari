@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdmissionModule } from './admissions/admission.module';
 import { AboutModule } from './about/about.module';
+import { SupportModule } from './support/support.module';
+import { VisitModule } from './visit/visit.module';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,6 +36,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     ]),
     AdmissionModule,
     AboutModule,
+    SupportModule,
+    VisitModule,
     BsDropdownModule.forRoot()
   ],
   declarations: [
