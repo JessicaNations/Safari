@@ -5,7 +5,7 @@ import { VisitComponent } from './visit.component';
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: 'visit', component: VisitComponent },
+      { path: 'visitdetails/:visitdetailId', component: VisitComponent },
   ]),
   ],
   declarations: [
