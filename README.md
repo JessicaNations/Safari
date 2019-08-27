@@ -1,41 +1,41 @@
 # Safari
-## DASHBOARD/EVENTS
+# DASHBOARD/EVENTS
 *   welcome page
 *   maybe animal gif/carousel
 ..*   not resizing :(
 ..*   style="display: block; width: 100%;"
 *   maybe upcoming holiday/event carousel
 *   instagram carousel? do they moderate that?
-## EVENTS (maybe make this the dashboard)
+# EVENTS (maybe make this the dashboard)
 ..*   new and upcoming attractions
 ..*   If current month == month from range, display the holidays in the specified range.
-*   Counts the number of upcoming holidays to fetch:
+## Counts the number of upcoming holidays to fetch:
 ..*   moment().nextHolidays(5).isHoliday();
-*   easy way
+## easy way
 ..*   display all dates for each holiday
 ..*   moment.holiday(Christmas);
 ..*   and format the date
-*   complicated way
-..*   Create an array of each holiday to be displayed
-..*   If holiday in date range is in the array, display it?
-	<container-element [ngSwitch]=”var now = moment().month()”>
-•	<some-element *ngSwitchCase=”1”>  
-o	moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
-•	</some-element>
-	</container-element>
-	etc...
-•	moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
-•	moment().holidaysBetween(moment(‘2/1’ | ‘5/31’));
-•	moment().holidaysBetween(moment(‘3/1’ | ‘6/30’));
-•	moment().holidaysBetween(moment(‘4/1’ | ‘7/31’));
-•	moment().holidaysBetween(moment(‘5/1’ | ‘8/31’));
-•	moment().holidaysBetween(moment(‘6/1’ | ‘9/30’));
-•	moment().holidaysBetween(moment(‘7/1’ | ‘10/31’));
-•	moment().holidaysBetween(moment(‘8/1’ | ‘11/30’));
-•	moment().holidaysBetween(moment(‘9/1’ | ‘12/31’));
-•	moment().holidaysBetween(moment(‘10/1’ | ‘1/31’));
-•	moment().holidaysBetween(moment(‘11/1’ | ‘2/28’));
-## ADMISSION (offer email subscription at ticket purchase)
+## complicated way
+*   Create an array of each holiday to be displayed
+*   If holiday in date range is in the array, display it?
+..*   <container-element [ngSwitch]=”var now = moment().month()”>
+..*   <some-element *ngSwitchCase=”1”>  
+..*   moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
+..*   </some-element>
+..*   </container-element>
+*   etc...
+..*   moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
+..*   moment().holidaysBetween(moment(‘2/1’ | ‘5/31’));
+..*   moment().holidaysBetween(moment(‘3/1’ | ‘6/30’));
+..*   moment().holidaysBetween(moment(‘4/1’ | ‘7/31’));
+..*   moment().holidaysBetween(moment(‘5/1’ | ‘8/31’));
+..*   moment().holidaysBetween(moment(‘6/1’ | ‘9/30’));
+..*   moment().holidaysBetween(moment(‘7/1’ | ‘10/31’));
+..*   moment().holidaysBetween(moment(‘8/1’ | ‘11/30’));
+..*   moment().holidaysBetween(moment(‘9/1’ | ‘12/31’));
+..*   moment().holidaysBetween(moment(‘10/1’ | ‘1/31’));
+..*   moment().holidaysBetween(moment(‘11/1’ | ‘2/28’));
+# ADMISSION (offer email subscription at ticket purchase)
 *   Adults
 *   Kids
 *   Feed cups
@@ -44,7 +44,7 @@ o	moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
 *   Pony rides
 *  Hayrides
 *   Concessions
-## VISIT
+# VISIT
 *   Hours
 ..*   entrance to the park ends at 4:30
 ..*   park closes at 5
@@ -59,17 +59,18 @@ o	moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
 ..*   park security
 ..*   no pets
 ..*   no outside food
-## ABOUT
+# ABOUT
 *   Historical blurb
 *   Meet the owners
 *   Animals for your event
 *   Meet our animals 
 ..*   (tour of heroes)
 *   Hiring/”Careers”
-## SUPPORT
+# SUPPORT
 *   donations
 *   free t-shirts?
 *   volunteer?
+# ERRORS
 ## angular.json “styles” removed:
 *   "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
 *   "./node_modules/bootstrap/dist/css/bootstrap.min.css",
