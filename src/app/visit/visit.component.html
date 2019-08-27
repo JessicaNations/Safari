@@ -1,4 +1,4 @@
-<!-- <div class="btn-group" dropdown>
+<div class="btn-group" dropdown>
   <button type="button" class="btn btn-danger">Visit</button>
   <button id="button-split" type="button" dropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split"
           aria-controls="dropdown-split">
@@ -15,29 +15,4 @@
     <li role="menuitem"><a class="dropdown-item" href="#">Groups</a>
     </li>
   </ul>
-</div> -->
-
-<h2>Plan Your Visit</h2>
-<div *ngFor="let visitdetail of visitdetails; index as visitdetailId">
-  <h3>
-    <a [title]="visitdetail.name + ' details'">
-    {{ visitdetail.name }}
-    </a>
-  </h3>
-
-  <p *ngIf="visitdetail.description">
-    Description: {{ visitdetail.description }}
-  </p>
-
-  <button (click)="share()">
-    Share
-  </button>
-
-  <app-visit-alert
-    [visitdetail]="visitdetail"
-    (notify)="onNotify()">
-  </app-visit-alert>
-
-
-
 </div>
