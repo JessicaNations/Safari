@@ -21,8 +21,6 @@
     * <container-element [ngSwitch]=”var now = moment().month()”>
     * <some-element *ngSwitchCase=”1”>  
     * moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
-    * </some-element>
-    * </container-element>
 *   etc
     * moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
     * moment().holidaysBetween(moment(‘2/1’ | ‘5/31’));
