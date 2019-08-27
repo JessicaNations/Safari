@@ -23,7 +23,7 @@
 ..*   moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
 ..*   </some-element>
 ..*   </container-element>
-*   etc...
+*   etc
 ..*   moment().holidaysBetween(moment(‘1/1’ | ‘4/3’));
 ..*   moment().holidaysBetween(moment(‘2/1’ | ‘5/31’));
 ..*   moment().holidaysBetween(moment(‘3/1’ | ‘6/30’));
