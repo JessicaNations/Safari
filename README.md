@@ -2,19 +2,19 @@
 # DASHBOARD/EVENTS
 *   welcome page
 *   maybe animal gif/carousel
-..*   not resizing :(
-..*   style="display: block; width: 100%;"
+..* not resizing :(
+..* style="display: block; width: 100%;"
 *   maybe upcoming holiday/event carousel
 *   instagram carousel? do they moderate that?
 # EVENTS (maybe make this the dashboard)
-..*   new and upcoming attractions
-..*   If current month == month from range, display the holidays in the specified range.
+*   new and upcoming attractions
+*   If current month == month from range, display the holidays in the specified range.
 ## Counts the number of upcoming holidays to fetch:
-..*   moment().nextHolidays(5).isHoliday();
+*   moment().nextHolidays(5).isHoliday();
 ## easy way
-..*   display all dates for each holiday
-..*   moment.holiday(Christmas);
-..*   and format the date
+*   display all dates for each holiday
+*   moment.holiday(Christmas);
+*   and format the date
 ## complicated way
 *   Create an array of each holiday to be displayed
 *   If holiday in date range is in the array, display it?
