@@ -7,6 +7,7 @@ import { HttpClientInMemoryWebApiModule  } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -28,6 +29,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { from } from 'rxjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
 // import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 @NgModule({
   imports: [
@@ -35,6 +39,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    MaterialModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {
@@ -44,9 +49,17 @@ import { MatButtonModule } from '@angular/material/button';
       }),
     CarouselModule.forRoot(),
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatListModule
   ],
-  exports: [MatButtonModule],
+  exports: [
+    MatButtonModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatListModule
+  ],
   declarations: [
     AppComponent,
     DashboardComponent,
