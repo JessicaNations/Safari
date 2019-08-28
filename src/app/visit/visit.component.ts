@@ -5,3 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './visit.component.html',
   styleUrls: ['./visit.component.css']
 })
+export class VisitComponent {}

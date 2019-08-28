@@ -1,5 +1,5 @@
 # Safari
-# DASHBOARD/EVENTS
+# DASHBOARD/CALENDAR
 *   welcome page
 *   maybe animal gif/carousel
     * not resizing :(
@@ -88,3 +88,5 @@
 ## 8/27/19 Stackblitz Errors:
 *   Error in /turbo_modules/@angular/compiler@8.0.3/bundles/compiler.umd.js(2479:21)
 *   Can't resolve all parameters for ApplicationModule: (?).
+## Could not find module “@angular-devkit/build-angular”
+* npm install --save-dev @angular-devkit/build-angular

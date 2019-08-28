@@ -1,4 +1,4 @@
-export class Event {
+export class Calendar {
   id: number;
   name: string;
 }

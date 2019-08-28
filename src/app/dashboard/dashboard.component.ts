@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import { Event } from '../event';
-import { EventService } from '../event.service';
+import { Calendar } from '../calendar';
+import { CalendarService } from '../calendar.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -10,21 +12,27 @@ import { EventService } from '../event.service';
 })
 export class DashboardComponent implements OnInit {
   public pageTitle = 'Safari';
-  events: Event[] = [];
+  calendars: Calendar[] = [];
+
   jwtToken = window.localStorage.getItem('jwtToken');
   images$ = this.httpClient
     .get(`https://api.giphy.com/v1/gifs/search?q=dogs&imit=10&api_key=dc6zaTOxFJmzC`)
     .pipe(map((resp: any) => resp.data));
 
-  constructor(private httpClient: HttpClient, private eventService: EventService) {}
+  constructor(
+    private httpClient: HttpClient,
+    private router: Router,
+    private calendarService: CalendarService
+  ) {}
 
-  ngOnInit() {
-    this.getEvents();
+  ngOnInit(): void {
+    this.calendarService.getCalendars()
+      .subscribe(calendars => this.calendars = calendars.slice(1, 5));
   }
 
-  getEvents(): void {
-    this.eventService.getEvents()
-      .subscribe(events => this.events = events.slice(1, 5));
+  gotoDetail(calendar: Calendar): void {
+    const link = ['/detail', calendar.id];
+    this.router.navigate(link);
   }
 
   setJwtToken(token: string): void {

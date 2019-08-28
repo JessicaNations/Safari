@@ -1,13 +1,11 @@
-<h1>{{pageTitle}}</h1>
+<h1>{{title}}</h1>
+<div class="header-bar"></div>
 <nav>
-  <a routerLinkActive='active' [routerLink]="['/dashboard']">Home</a>
-  <a routerLinkActive='active' [routerLink]="['/dashboard']">Events</a>
-  <a routerLinkActive='active' [routerLink]="['/visit']">Visit</a>
-  <a routerLinkActive='active' [routerLink]="['/admissions']">Admission</a>
-  <a routerLinkActive='active' [routerLink]="['/about']">About</a>
-  <a routerLinkActive='active' [routerLink]="['/support']">Support</a>
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+  <a routerLink="/calendars" routerLinkActive="active">Calendars</a>
+  <a routerLink="/admissions" routerLinkActive="active">Admission</a>
+  <a routerLink="/visit" routerLinkActive="active">Visit</a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a routerLink="/support" routerLinkActive="active">Support</a>
 </nav>
-
-<div class='container'>
 <router-outlet></router-outlet>
-</div>
