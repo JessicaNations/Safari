@@ -92,5 +92,5 @@
 * sockjs-node/info?t=1567006341178:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
 * sockjs-node/info?t=1567006363026:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
 * sockjs-node/info?t=1567006402026:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
-<img src="/assets/images/8-28Dashboard.png">
-<img src="/assets/images/8-28Calendars.png">
+![] (8-28Dashboard.png)
+![] (8-28Calendars.png)
