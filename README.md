@@ -76,17 +76,19 @@
 *   polyfills.ts
 *   Required for Stackblitz*   
 *   import 'core-js/es7/reflect';
-## 8/27/19 Browser Errors:
-*   Angular is running in the development mode. 
-    * Call enableProdMode() to enable the production mode.
-*   null:1 Failed to load resource: 
-    * the server responded with a status of 404 (Not Found)
-*   api/admissions/admissions.json:1 Failed to load resource: 
-    * the server responded with a status of 404 (Not Found)
-*   admission.service.ts:41 Server returned code: 404, error message is:
-    * Http failure response for http://localhost:4200/api/admissions/admissions.json: 404 Not Found
 ## 8/27/19 Stackblitz Errors:
 *   Error in /turbo_modules/@angular/compiler@8.0.3/bundles/compiler.umd.js(2479:21)
 *   Can't resolve all parameters for ApplicationModule: (?).
 ## Could not find module “@angular-devkit/build-angular”
 * npm install --save-dev @angular-devkit/build-angular
+## 8/28/19 Errors
+* Angular is running in the development mode. Call enableProdMode() to enable the production mode.
+* 2null:1 Failed to load resource: the server responded with a status of 404 (Not Found)
+* vendor.js:131575 [WDS] Disconnected!
+* close @ vendor.js:131575
+* sockjs-node/info?t=1567006314872:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
+* sockjs-node/info?t=1567006320980:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
+* sockjs-node/info?t=1567006329069:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
+* sockjs-node/info?t=1567006341178:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
+* sockjs-node/info?t=1567006363026:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
+* sockjs-node/info?t=1567006402026:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
