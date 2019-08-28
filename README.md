@@ -96,4 +96,4 @@
 <img src="/assets/images/8-28Dashboard.png">
 <img src="/images/8-28Calendars.png">
 ![Dashboard](/src/assests/images/8-28Dashboard.png "Dashboard")
-![Calendars](/src/assests/images/8-28Calendars.png "Calendars")
+![Calendars](8-28Calendars.png "Calendars")
