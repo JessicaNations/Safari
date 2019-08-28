@@ -93,7 +93,5 @@
 * sockjs-node/info?t=1567006363026:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
 * sockjs-node/info?t=1567006402026:1 Failed to load resource: net::ERR_CONNECTION_REFUSED
 ## 8/28/19 Images:
-<img src="/assets/images/8-28Dashboard.png">
-<img src="/images/8-28Calendars.png">
-![Dashboard](/src/assests/images/8-28Dashboard.png "Dashboard")
-![Calendars](8-28Calendars.png "Calendars")
+![Dashboard](https://github.com/JessicaNations/Safari/blob/master/src/assets/images/8-28Dashboard.png)
+![Calendars](https://github.com/JessicaNations/Safari/blob/master/src/assets/images/8-28Calendars.png)
