@@ -26,7 +26,8 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { from } from 'rxjs';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 // import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { from } from 'rxjs';
         passThruUnknownUrl: true
       }),
     CarouselModule.forRoot(),
-    // BrowserAnimationsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   declarations: [
     AppComponent,
