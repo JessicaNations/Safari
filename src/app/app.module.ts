@@ -46,6 +46,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatButtonModule
   ],
+  exports: [MatButtonModule],
   declarations: [
     AppComponent,
     DashboardComponent,
