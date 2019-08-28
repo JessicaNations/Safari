@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 import { Calendar } from '../calendar';
 import { CalendarService } from '../calendar.service';
+
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',

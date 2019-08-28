@@ -47,7 +47,6 @@
                 {{ admission.admissionName }}
               </a>
             </td>
-            <td>{{ admission.admissionCode | lowercase | convertToSpaces: '-' }}</td>
             <td>{{ admission.releaseDate }}</td>
             <td>{{ admission.price | currency:'USD':'symbol':'1.2-2' }}</td>
           </tr>
